@@ -2,6 +2,10 @@
 
 As follows there are something deserved to record, please enjoy. ☕️
 
+### [2021-11](./2021-11/index.md)
+
+:-)
+
 ### [2021-10](./2021-10/index.md)
 
 1. [Spring Validation最佳实践](https://segmentfault.com/a/1190000023471742)
