@@ -4,7 +4,7 @@ As follows there are something deserved to record, please enjoy. ☕️
 
 ### [2021-11](./2021-11/index.md)
 
-:-)
+1. [Spring Boot依赖版本查询](https://start.spring.io/actuator/info)
 
 ### [2021-10](./2021-10/index.md)
 
