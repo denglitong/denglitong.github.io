@@ -10,6 +10,7 @@ As follows there are something deserved to record, please enjoy. ☕️
 4. 🌐 [Idea中自动注释的缩进（避免添加注释自动到行首）](https://blog.csdn.net/daizhe/article/details/78249272)
 5. 🌐 [Mocking resource with static block with PowerMock](https://stackoverflow.com/questions/47853919/mocking-getresource-in-static-block-with-powermock#comment82699235_47853919)
 6. 🌐 [解决IDEA中file文件插件失去高亮显示的问题](https://blog.csdn.net/weixin_45310564/article/details/106183955)
+7. 🌐 [AssertJ - fluent assertions java library](https://assertj.github.io/doc/)
 
 ### [2021-11](./2021-11/index.md)
 
