@@ -9,3 +9,4 @@
 5. 🌐 [Mocking resource with static block with PowerMock](https://stackoverflow.com/questions/47853919/mocking-getresource-in-static-block-with-powermock#comment82699235_47853919)
 6. 🌐 [解决IDEA中file文件插件失去高亮显示的问题](https://blog.csdn.net/weixin_45310564/article/details/106183955)
 7. 🌐 [AssertJ - fluent assertions java library](https://assertj.github.io/doc/)
+8. 🌐 [Git status 显示中文和解决中文乱码](https://blog.csdn.net/u012145252/article/details/81775362)
