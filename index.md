@@ -16,6 +16,8 @@
 6. [解决IDEA中file文件插件失去高亮显示的问题](https://blog.csdn.net/weixin_45310564/article/details/106183955)
 7. [AssertJ - fluent assertions java library](https://assertj.github.io/doc/)
 8. [Git status 显示中文和解决中文乱码](https://blog.csdn.net/u012145252/article/details/81775362)
+9. [Locust Performance Load Testing Using Java](https://www.blazemeter.com/blog/locust-performance-testing-using-java-and-kotlin)
+10. [Use Mockito to mock some methods but not others](https://stackoverflow.com/questions/14970516/use-mockito-to-mock-some-methods-but-not-others)
 
 ### 2021-11
 
