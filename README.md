@@ -1,5 +1,5 @@
 # denglitong.github.io
 
-Record the views on the road of building things.
+Build right things, Record the views.
 
-[Homepage](./index.md)
+[博客首页](./index.md)
