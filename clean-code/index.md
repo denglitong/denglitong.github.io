@@ -4,15 +4,37 @@
 
 1. [序 & 前言](./0-preface.md)
 2. [第1章 整洁代码](./1-clean-code.md)
-3. [第2章 有意义的命名](./2-meaningful-name.md)
-4. [第3章 函数](./3-function.md)
-5. [第4章 注释](./4-comment.md)
-6. [第5章 格式](./5-format.md)
-7. [第6章 对象和数据结构](./6-object-and-data-structure.md)
-8. [第7章 错误处理](./7-error-handle.md)
-9. [第8章 系统](./8-boundary.md)
-10. [第9章 单元测试](./9-unit-test.md)
-11. [第10章 类](./10-class.md)
-12. [第11章 系统](./11-system.md)
-13. [第12章 迭进](./12-iterate.md)
-14. [第13章 并发编程](./13-concurrent.md)
+3. [第2章 有意义的命名](./2-meaningful-names.md)
+4. [第3章 函数](./3-functions.md)
+5. [第4章 注释](./4-comments.md)
+6. [第5章 格式](./5-formatting.md)
+7. [第6章 对象和数据结构](./6-objects-and-data-structures.md)
+8. [第7章 错误处理](./7-error-handling.md)
+9. [第8章 系统](./8-boundaries.md)
+10. [第9章 单元测试](./9-unit-tests.md)
+11. [第10章 类](./10-classes.md)
+12. [第11章 系统](./11-systems.md)
+13. [第12章 迭进](./12-emergence.md)
+14. [第13章 并发编程](./13-concurrency.md)
+15. [第14章 逐步改进](./14-successive-refinement.md)
+16. [第15章 Junit内幕](./15-junit-internals.md)
+17. [第16章 重构SerialDate](./16-refactoring-serialdate.md)
+18. [第17章 味道与启发](./17-smells-and-heuristics.md)
+
+Chapter 1: Clean Code
+Chapter 2: Meaningful Names
+Chapter 3: Functions
+Chapter 4: Comments
+Chapter 5: Formatting
+Chapter 6: Objects and Data Structures
+Chapter 7: Error Handling
+Chapter 8: Boundaries
+Chapter 9: Unit Tests
+Chapter 10: Classes
+Chapter 11: Systems
+Chapter 12: Emergence
+Chapter 13: Concurrency
+Chapter 14: Successive Refinement
+Chapter 15: JUnit Internals
+Chapter 16: Refactoring SerialDate
+Chapter 17: Smells and Heuristics
