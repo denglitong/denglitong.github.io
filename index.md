@@ -3,8 +3,11 @@
 ## 专题
 
 1. [Clean Code 代码整洁之道](./clean-code/index.md)
+2. [Refactoring 重构：改善代码的既有设计](./refactoring/index.md)
 
 ## 索引
+
+### 2022-01
 
 ### 2021-12
 
