@@ -12,6 +12,7 @@
 1. [Resilience4j is a fault tolerance library](https://github.com/resilience4j/resilience4j)
 2. [Bind interceptor in Guice](https://stackoverflow.com/questions/2716993/hidden-features-of-google-guice/2718802)
 3. [Spring Validation最佳实践](https://segmentfault.com/a/1190000023471742)
+4. [AutoValue for POJO class](https://github.com/google/auto/blob/master/value/userguide/index.md)
 
 #### 单元测试
 
