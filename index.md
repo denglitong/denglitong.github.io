@@ -2,8 +2,9 @@
 
 ## 专题
 
-1. [Clean Code 代码整洁之道](./clean-code/index.md)
-2. [Refactoring 重构：改善代码的既有设计](./refactoring/index.md)
+1. [1368个单词就够了](./1368-words/index.md)
+2. [Clean Code 代码整洁之道](./clean-code/index.md)
+3. [Refactoring 重构：改善代码的既有设计](./refactoring/index.md)
 
 ## 分类
 
