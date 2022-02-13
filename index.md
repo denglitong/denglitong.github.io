@@ -5,7 +5,8 @@
 1. [1368个单词就够了](./1368-words/index.md)
 2. [Clean Code 代码整洁之道](./clean-code/index.md)
 3. [Refactoring 重构：改善代码的既有设计](./refactoring/index.md)
-4. [Refactoring To Patterns](./refactoring-to-patterns/index.md)
+4. [Refactoring To Patterns 重构与模式](./refactoring-to-patterns/index.md)
+5. [Inside the Java Virtual Machine 深入理解Java虚拟机](./inside-the-java-virtual-machine/index.md)
 
 ## 分类
 
