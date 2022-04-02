@@ -195,8 +195,8 @@ Substrate VM: 提前编译，降低内存占用及启动时间。
     ```
 
     贴两张调试成功的截图：
-    ![jdk12-debug-1.png](./jdk12-debug-1.png)
-    ![jdk12-debug-2.png](./jdk12-debug-2.png)
+    ![jdk12-debug-1.png](./jdk12-debug-1.png)  
+    ![jdk12-debug-2.png](./jdk12-debug-2.png)  
 
     **参考链接**
     - [https://blog.csdn.net/qq_33543634/article/details/121153063](https://blog.csdn.net/qq_33543634/article/details/121153063)
