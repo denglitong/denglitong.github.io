@@ -59,24 +59,27 @@ Substrate VM: 提前编译，降低内存占用及启动时间。
 
 - 获取源码
 
-    https://hg.openjdk.java.net/jdk/jdk12/rev/b67884871b5f
-    https://hg.openjdk.java.net/jdk/jdk12/archive/b67884871b5f.zip
+    [https://hg.openjdk.java.net/jdk/jdk12/rev/b67884871b5f](https://hg.openjdk.java.net/jdk/jdk12/rev/b67884871b5f)
+    [https://hg.openjdk.java.net/jdk/jdk12/archive/b67884871b5f.zip](https://hg.openjdk.java.net/jdk/jdk12/archive/b67884871b5f.zip)
 
 - 安装编译依赖库
 
-
+    ```
     brew install freetype && brew link --overwrite freetype  
     brew install cups  
     brew install libx11 libxext libxrender libxrandr libxtst libxt  
     brew install portaudio (代替  brew install alsa-lib)  
     brew install libffi  
     brew install autoconf  
-
+    ```
+    
 - 开始编译
 
+    ```
     make clean && make dist-clean  
     bash configure --enable-debug --with-jvm-variants=server  
     make images
+    ```
 
 - 修复源码中的 Bug
 
@@ -196,5 +199,5 @@ Substrate VM: 提前编译，降低内存占用及启动时间。
     ![jdk12-debug-2.png](./jdk12-debug-2.png)
 
     **参考链接**
-    - https://blog.csdn.net/qq_33543634/article/details/121153063
-    - https://python.iitter.com/other/265745.html
+    - [https://blog.csdn.net/qq_33543634/article/details/121153063](https://blog.csdn.net/qq_33543634/article/details/121153063)
+    - [https://python.iitter.com/other/265745.html](https://python.iitter.com/other/265745.html)
