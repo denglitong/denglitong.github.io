@@ -30,3 +30,5 @@
 
 ```12.``` [Java内存模型与线程](./12-java-memory-model-and-threads.md)  
 ```13.``` [线程安全与锁优化](./13-thread-safety-and-lock-optimization.md)  
+
+Github Repo: [inside-the-jvm](https://github.com/denglitong/inside-the-jvm)
