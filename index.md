@@ -43,6 +43,14 @@
 
 ## 索引
 
+### 2022-04
+
+1. [vscode-icon-mac 目录图标插件](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-icons-mac)
+2. [Software Engineer roadmap via books](https://medium.com/@iamjwr/software-engineer-roadmap-via-books-a6aabdc2589c)
+3. [Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines)
+4. [赫蹏（hètí），专为中文内容展示设计的排版样式增强](https://github.com/sivan/heti)
+5. [Diagrams Markdown Mermaid Demo](https://github.com/demos-driven/diagrams-markdown-mermaid)
+
 ### 2022-01
 
 ### 2021-12
