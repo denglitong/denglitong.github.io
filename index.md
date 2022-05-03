@@ -1,47 +1,56 @@
-## 欢迎来到博客首页
+## Welcome to homepage!
 
-## 专题
+## Subjects
+
+### English
 
 1. [1368个单词就够了](./1368-words/index.md)
-2. [Clean Code 代码整洁之道](./clean-code/index.md)
-3. [Refactoring 重构：改善代码的既有设计](./refactoring/index.md)
-4. [Refactoring To Patterns 重构与模式](./refactoring-to-patterns/index.md)
-5. [Inside the Java Virtual Machine 深入理解Java虚拟机](./inside-the-java-virtual-machine/index.md)
+2. [16 Practical Speaking Lessions](./16-lessions/index.md)
 
-## 分类
+### Engineering
 
-### Java类库
+1. [Clean Code 代码整洁之道](./clean-code/index.md)
+2. [Refactoring 重构：改善代码的既有设计](./refactoring/index.md)
+3. [Refactoring To Patterns 重构与模式](./refactoring-to-patterns/index.md)
+
+### Java Virtual Machine
+
+1. [Inside the Java Virtual Machine 深入理解Java虚拟机](./inside-the-java-virtual-machine/index.md)
+
+## Categories
+
+### Java Libraries
 
 1. [Resilience4j is a fault tolerance library](https://github.com/resilience4j/resilience4j)
 2. [Bind interceptor in Guice](https://stackoverflow.com/questions/2716993/hidden-features-of-google-guice/2718802)
 3. [Spring Validation最佳实践](https://segmentfault.com/a/1190000023471742)
 4. [AutoValue for POJO class](https://github.com/google/auto/blob/master/value/userguide/index.md)
 
-#### 单元测试
+#### Unit tests
 
 1. [AssertJ - fluent assertions java library](https://assertj.github.io/doc/)
 2. [Mocking resource with static block with PowerMock](https://stackoverflow.com/questions/47853919/mocking-getresource-in-static-block-with-powermock#comment82699235_47853919)
 3. [Use Mockito to mock some methods but not others](https://stackoverflow.com/questions/14970516/use-mockito-to-mock-some-methods-but-not-others)
 
-### 负载测试
+### Load Tests
 
 1. [Locust Performance Load Testing Using Java](https://www.blazemeter.com/blog/locust-performance-testing-using-java-and-kotlin)
 
-### Git版本控制
+### Version Control
 
 1. [Git status 显示中文和解决中文乱码](https://blog.csdn.net/u012145252/article/details/81775362)
 
-### 编辑器
+### Editors
 
 1. [Idea中自动注释的缩进（避免添加注释自动到行首）](https://blog.csdn.net/daizhe/article/details/78249272)
 2. [解决IDEA中file文件插件失去高亮显示的问题](https://blog.csdn.net/weixin_45310564/article/details/106183955)
 3. [IDEA Version Control 窗口显示 local changes](https://blog.csdn.net/comeilmforever/article/details/107753783)
 
-### 系统工具
+### Tools
 
 1. [Mac系统切换机械键盘win和alt键](https://www.jianshu.com/p/66922b2bc8c3)
 
-## 索引
+## Index
 
 ### 2022-04
 
@@ -50,10 +59,6 @@
 3. [Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines)
 4. [赫蹏（hètí），专为中文内容展示设计的排版样式增强](https://github.com/sivan/heti)
 5. [Diagrams Markdown Mermaid Demo](https://github.com/demos-driven/diagrams-markdown-mermaid)
-
-### 2022-01
-
-### 2021-12
 
 ### 2021-11
 
