@@ -12,5 +12,5 @@
 8. [搬移特性](./8-moving-features-betwwen-objects.md)
 9. [重新组织数据](./9-organizing-data.md)
 10. [简化条件逻辑](./10-simplifying-conditional-expressions.md)
-11. [重新组织API](./11-making-method-calls-simpler.md)
+11. [重构 API](./11-refactoring-api.md)
 12. [处理继承关系](./12-dealing-with-generalization.md)
