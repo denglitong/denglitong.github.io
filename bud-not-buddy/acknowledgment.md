@@ -1,8 +1,8 @@
 ## Acknowledgment
 
-- [Return to parent index](../index.md)
+- [Return to parent index](./index.md)
 
-I am so fortunate to have been welcomed into the world of literature for young people, I want to **give heartfelt thanks to** everyone at Delacorte Press for al they have done to make this experience so memorable.
+I am so fortunate to have been welcomed into the world of literature for young people, I want to **give heartfelt thanks to** everyone at Delacorte Press for all they have done to make this experience so memorable.
 
     由衷的感谢
 
