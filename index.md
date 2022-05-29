@@ -6,6 +6,7 @@
 
 1. [1368个单词就够了](./1368-words/index.md)
 2. [16 Practical Speaking Lessions](./16-lessions/index.md)
+3. [Bud, Not Buddy](./bud-not-buddy/index.md)
 
 ### Engineering
 
