@@ -97,3 +97,13 @@ It was like something was telling me there was a message for me on this flyer bu
 
     flyer 传单
     decoder ring 解码指环
+
+unserneath the picture. 在照片下方
+
+Working underneath the car is alwasy a messy job. 在汽车底下工作是件脏活
+
+supper table 晚餐桌
+
+chest of drawers 衣柜，抽屉柜
+
+I went over to the big chest of drawers and took my other set of clothes out and put them in the suitcase too.
