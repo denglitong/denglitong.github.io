@@ -41,7 +41,7 @@ In the Collecting Parameter idiom a collection (list, map, etc.) is passed repea
 
     In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface.
 
-3. 用 【Factory Method](https://refactoring.guru/design-patterns/factory-method) 引入多态创建
+3. 用 [Factory Method](https://refactoring.guru/design-patterns/factory-method) 引入多态创建
 
     Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
