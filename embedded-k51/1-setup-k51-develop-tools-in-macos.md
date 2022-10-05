@@ -139,7 +139,7 @@ sdcc 编译会生成很多目标文件，这里我们只需要 `.ihx` 后缀的�
 stcgal -P stc89 -p /dev/tty.wchusbserial1410 led.ihx
 ```
 
-这里的参数 -P 表示使用的是 stc89 型号， -p /dev/tty.wchusbserial1410 表示 usb 串口设备，led.ihx 是刚刚编译好的程序。此时 stcgal 会提示我们在等到单片机板子通电：
+这里的参数 -P 表示使用的是 stc89 型号， -p /dev/tty.wchusbserial1410 表示 usb 串口设备，led.ihx 是刚刚编译好的程序。此时 stcgal 会提示我们在等待单片机板子通电：
 
 ![stcgal-waiting-for-cycle-power](./stcgal-waiting-for-cycle-power.png)
 
