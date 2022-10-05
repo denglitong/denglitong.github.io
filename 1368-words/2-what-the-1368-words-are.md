@@ -45,7 +45,7 @@ flowchart TD
 
 Object nouns
 
-time: 
+时间类 time: 
 ```
 morning, afternoon, evening, night, tonight, 
 today, tomorrow, yesterday, weekend, month, year
@@ -54,24 +54,24 @@ period, history, future, birthday, holiday,
 festival, schedule, age
 ```
 
-weather:
+天气类 weather:
 ```
 rain, snow, wind, cloud
 ```
 
-nature:
+自然类 nature:
 ```
 mountain, air, light, water, fire, ice, smoke,
 heat, ground, sky, river, field, forest, sea, 
 stone, star
 ```
 
-plant:
+植物类 plant:
 ```
 grass, tree, crop(农作物)
 ```
 
-animal:
+动物类 animal:
 ```
 bird(🐦),    cat(🐱),     dog(🐶), 
 horse(🐴),   rabbit(🐰),  elephant(🐘), 
@@ -81,14 +81,14 @@ chicken(🐔), fish(鱼),    sheep(🐑),
 monkey(🐒),  snake(🐍),   reptile(🐞)
 ```
 
-insect:
+昆虫类 insect:
 ```
 bee(🐝), butterfly(🦋), spider(🕷)
 ```
 
 bacteria(细菌)
 
-place:
+地点类 place:
 ```
 hospital(🏥), restaurant, hotel(🏨)
 university, factory, jail(监狱)
@@ -97,53 +97,78 @@ club, bar(酒吧), court(法庭)
 market, town, village, city
 ```
 
-organization
+组织类 organization
 ```
 company, charity(慈善机构)
 ```
 
-sound
+声音类 sound
 ```
 voice, noise, music
 ```
 
-food
+食品类 food
 ```
 egg(🥚), meat, steak(牛排), bread(🍞)
 cake(🍰), dessert, soup, sandwich
 noodle, pie(馅饼), chocolate, sause(酱)
 ```
 
-meal
+肉类 meal
 ```
 breakfast, lunch, dinner
 ```
 
-vegetable
+蔬菜类 vegetable
 ```
 potato(🥔), tomato(🍅), carrot(🥕)
 letture(莴笋), bean(豆)
 ```
 
-fruit
+水果类 fruit
 ```
 apple, orange(🍊), banana
 ```
 
-ingredient
+配料 ingredient
 ```
 oil, sugar(趟), salt, butter(黄油🧈), cream(奶油)
 ```
 
-drink
+饮料类 drink
 ```
 coffee, milk, tea, juice, beer, wine(葡萄酒), alcohol
 ```
 
+营养类
+```
+nutrient 营养品 mineral 矿物 vitamin 维生素 protein 蛋白质
+```
 
+疾病类
+```
+disease 疾病 fever 发烧 flu 流行性感冒；流感；cancer 癌症
+```
 
+房屋类
+```
+house office room floor wall window door roof 屋顶 kitchen 厨房
+```
 
+家具类
+```
+furniture 家具 bed chair 椅子 desk table seat couch 沙发
+```
 
+服装类
+```
+clothes shirt 衬衫 shoes cap 帽子 
+hat coat 上衣，外套 pants 裤子 
+uniform 制服 suits 西服，西装 
+underwear pocket 口袋 
+jeans 牛仔裤 button 纽扣 zip 拉链
+sock 短袜
+```
 
 
 
