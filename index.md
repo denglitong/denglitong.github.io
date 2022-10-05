@@ -10,7 +10,7 @@
 
 ### Embedded Software Development
 
-1. [K51单片机]()
+1. [K51单片机](./embedded-k51/index.md)
 
 ### Engineering
 
