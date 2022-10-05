@@ -159,7 +159,7 @@ I put my head down and started shooting apologies out like John Dillinger shoots
 
 - shoot out bullets 射出子弹
 
-"And sir, I'm sorry tat I got you out of your sleep."
+"And sir, I'm sorry that I got you out of your sleep."
 
 - get out of sleep 从睡眠中醒来
 
