@@ -8,6 +8,10 @@
 2. [16 Practical Speaking Lessions](./16-lessions/index.md)
 3. [Bud, Not Buddy](./bud-not-buddy/index.md)
 
+### Embedded Software Development
+
+1. [K51单片机]()
+
 ### Engineering
 
 1. [Clean Code 代码整洁之道](./clean-code/index.md)
