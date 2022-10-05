@@ -10,7 +10,7 @@
 
 在继续了解一些单片机/嵌入式的入门知识的同时，我在 C语言网 复习了一下 [C语言教程](https://www.dotcpp.com/course/c/) 和 [C语言函数库](https://www.dotcpp.com/course/lib/)，接着想继续学习上面的 [单片机课程](https://www.dotcpp.com/course/scm/)；不过上面的单片机教程中说到，需要先完成《手把手教你学51单片机》基础，所以我搜到了 B 站上的 [金沙滩 KST-51单片机 ](https://www.bilibili.com/video/BV1RJ411k74J/?p=1&vd_source=242281abf4f78a703efdf5ba4b810246) 教程。
 
-在金沙滩的 KST-51 单片机教程中，所使用的是Windows操作系统及其配套软件，由于我使用的是 MacOS，所以单片机开发调试等集成环境需要另行摸索。在参考资料方面，我查找到了简书上的 [Mac下单片机开发环境的搭建](https://www.jianshu.com/p/d16025a34cfe) 教程和 [PlatformIO IDE搭建统一的物联网嵌入式开发环境](https://www.jianshu.com/p/1f68451ee99c) 教程。第一个教程是安装了编译器、烧录程序从命令行进行编译构建、下载到开发板上；第二个教程是使用 PlatformIO IDE 这个插件集成到 VS Code 或者 CLion 等编辑器上。这里分别记录一下这两种大家单片机开发环境的过程。
+在金沙滩的 KST-51 单片机教程中，所使用的是Windows操作系统及其配套软件，由于我使用的是 MacOS，所以单片机开发调试等集成环境需要另行摸索。在参考资料方面，我查找到了简书上的 [Mac下单片机开发环境的搭建](https://www.jianshu.com/p/d16025a34cfe) 教程和 [PlatformIO IDE搭建统一的物联网嵌入式开发环境](https://www.jianshu.com/p/1f68451ee99c) 教程。第一个教程是安装了编译器、烧录程序从命令行进行编译构建、下载到开发板上；第二个教程是使用 PlatformIO IDE 这个插件集成到 VS Code 或者 CLion 等编辑器上。这里分别记录一下这两种搭建单片机开发环境的过程。
 
 ## 二、环境说明
 
@@ -20,7 +20,7 @@
 
 ### 1. 简单原理介绍
 
-C 语言程序烧录到单片机上，需要先用支持单片机对应架构的编译器进行编译，得到中间文件（如 .ihx 或 .hex 文件），然后再使用烧录程序将中间文件下载到单片机的 FLASH 存储中，这样单片机才能允许对应的 C 语言程序逻辑。
+C 语言程序烧录到单片机上，需要先用支持单片机对应架构的编译器进行编译，得到中间文件（如 .ihx 或 .hex 文件），然后再使用烧录程序将中间文件下载到单片机的 FLASH 存储中，这样单片机才能运行对应的 C 语言程序逻辑。
 
 ### 2. 安装 K51 单片机 C 语言编译器
 
@@ -136,10 +136,10 @@ sdcc 编译会生成很多目标文件，这里我们只需要 `.ihx` 后缀的�
 有了 `.ihx` 后我们就可以使用 stcgal 将其烧录到单片机中，执行以下命令：
 
 ```bash
-stcgal -P stc89 -p /dev/tty.wchusbserial1410 pmd.ihx
+stcgal -P stc89 -p /dev/tty.wchusbserial1410 led.ihx
 ```
 
-此时 stcgal 会提示我们在等到单片机板子通电：
+这里的参数 -P 表示使用的是 stc89 型号， -p /dev/tty.wchusbserial1410 表示 usb 串口设备，led.ihx 是刚刚编译好的程序。此时 stcgal 会提示我们在等到单片机板子通电：
 
 ![stcgal-waiting-for-cycle-power](./stcgal-waiting-for-cycle-power.png)
 
