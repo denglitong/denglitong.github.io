@@ -2,6 +2,26 @@
 
 - [K51 单片机开发 目录](./index.md)
 
+本文目录：
+
+- [前言](#一前言)
+- [环境说明](#二环境说明)
+- [从命令行编译烧录](#三从命令行编译烧录)
+  - [简单原理介绍](#1-简单原理介绍)
+  - [安装-k51-单片机-c-语言编译器](#2-安装-k51-单片机-c-语言编译器)
+  - [安装烧录程序-stcgal](#3安装烧录程序-stcgal)
+  - [在命令行下测试编译和烧录](#4-在命令行下测试编译和烧录)
+- [从集成 IDE 编译烧录](#四从集成-ide-编译烧录)
+  - [下载-platformio-for-clion-插件](#1-下载-platformio-for-clion-插件)
+  - [在-clion-中创建-platformio-项目](#2-在-clion-中创建-platformio-项目)
+  - [在-clion-中编译烧录程序](#3-在-clion-中编译烧录程序)
+  - [clion-platformio-插件配置说明](#4-clion-platformio-插件配置说明)
+    - [烧录的-usb-串口设备号](#1-烧录的-usb-串口设备号)
+    - [编译烧录命令行的自动安装](#2-编译烧录命令行的自动安装)
+    - [解决在-ide-中头文件提示找不到的问题](#3-解决在-ide-中头文件提示找不到的问题)
+    - [解决引入的头文件提示未定义的标识符问题](#4-解决引入的头文件提示未定义的标识符问题)
+
+
 ## 一、前言
 
 最近在学习单片机，今天跑通了第一个程序，在这里记录一下这个入门的过程。
@@ -197,7 +217,7 @@ brew install platformio
 
 ### 4. CLion PlatformIO 插件配置说明
 
-1. 烧录的 USB 串口设备号
+#### 1. 烧录的 USB 串口设备号
 
 可以看到在 CLion 中我们并没有指定对应的单片机的串口设备号就可以直接烧录到板子上了，这是因为 CLion PlatformIO 插件可以自动检测到对应的外设（假设只有一个外设的前提下），然后自动烧录到对应的外设上。
 
@@ -207,7 +227,7 @@ brew install platformio
 
 ![Config-upload-port](./Config-upload-port.png)
 
-2. 编译烧录命令行的自动安装
+#### 2. 编译烧录命令行的自动安装
 
 可以看到在 CLion PlatformIO 插件中我们并没有配置具体去编译和烧录的 `sdcc`, `stcgal` 等工具，但是我们创建的 `STC89C52RC` 这一个单片机芯片架构也是需要使用 `sdcc`, `stcgal` 这些工具具体去完成对应的编译和烧录功能的，PlatformIO 插件是怎么做到自动完成的呢？
 
@@ -230,7 +250,7 @@ drwx------   8 litong.deng  staff   256B 10  6 10:13 toolchain-sdcc
 
 然后 CLion PlatformIO 插件就可以使用对应的工具包进行具体的编译、烧录等功能了。这里节省了手工操作，提高了开发效率！
 
-3. 解决在 IDE 中头文件提示找不到的问题
+#### 3. 解决在 IDE 中头文件提示找不到的问题
 
 上述过程虽然可以正常编译烧录到板子上进行验证，但是在 CLion 编辑器中居然提示找不到 <8051.h> 这个头文件或者引用了未定义的标识符：
 
@@ -253,7 +273,7 @@ include_directories("~/.platformio/packages/toolchain-sdcc/share/sdcc/include/mc
 
 ![Include-directories](./Include-directories.png)
 
-3. 解决引入的头文件提示未定义的标识符问题
+#### 4. 解决引入的头文件提示未定义的标识符问题
 
 接上图，在打开的 <8051.h> 头文件中看到定义的标识符标红了，在 C 源程序中看到的提示为 `User of undeclared identifier P0_0`：
 
