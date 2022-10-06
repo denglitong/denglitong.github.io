@@ -154,3 +154,121 @@ stcgal -P stc89 -p /dev/tty.wchusbserial1410 led.ihx
 可以看到最右侧的 LED 小灯可以正常点亮和熄灭并且不停的循环，至此所有环境搭建完成，并顺利完成了第一个点亮小灯的 Demo！下一节我们再来讲如何在集成环境中搭建单片机开发环境......
 
 ## 四、从集成 IDE 编译烧录
+
+上一节讲到，我们可以安装编译器和烧录软件后，在命令行手动进行编译和烧录单片机。这种方式虽然可行，但是更多时候我们希望在一个集成 IDE 环境里面进行开发和调试，在这里我们使用 [PlatformIO IDE](https://platformio.org/platformio-ide) 这个 IDE 集成插件。
+
+PlatformIO 官网上的教程是结合 VS Code 编辑器来使用的，具体可参考 [PlatformIO IDE搭建统一的物联网嵌入式开发环境](https://www.jianshu.com/p/1f68451ee99c) 这个教程。我更习惯于在 CLion 编辑器中写 C/C++ 代码，下面就讲一下在 CLion 中如何集成 PlatformIO 插件进行单片机开发。
+
+### 1. 下载 PlatformIO for CLion 插件
+
+首先我们需要在 CLion 的插件中先安装 [PlatformIO for CLion](https://plugins.jetbrains.com/plugin/13922-platformio-for-clion) 这个插件，在安装过程中会提示需要连同 [Ini](https://plugins.jetbrains.com/plugin/6981-ini) 插件一起安装，点击确定后完成插件安装。
+
+![Clion-plugin](./CLion-plugin.png)
+
+安装完 PlatformIO 插件后，我们还需要安装一下 [Platform Core(CLI)](https://platformio.org/install/cli)，这是 PlatformIO 的命令行工具，各个 IDE 的集成也都是用的这个 CLI 命令行提供的功能。在 Mac 执行以下安装命令：
+
+```bash
+brew install platformio
+```
+
+执行 `pio --version` 来确认 Platform Core(CLI) 已成功安装。
+
+### 2. 在 CLion 中创建 PlatformIO 项目
+
+在 CLion 中创建新项目，`File - New - Project - PlatformIO`，在 `Avaiable boards and frameworks` 中下拉到 `STC` 这一项，再点进去选择具体的某个单片机芯片型号，这里我们选择 `STC89C52RC` 这一项，点击 `Create` 即可完成项目创建：
+
+![LedDemo](./LedDemo.png)
+
+### 3. 在 CLion 中编译烧录程序
+
+将上述 `led.c` 的内容粘贴到工程的 `main.c` 文件中，在构建选项中下拉选择 `PlatformIO Upload`：
+
+![PlatformIO-upload](./PlatformIO-upload.png)
+
+然后点击右侧的 `Build PlatformIO Upload` 构建按钮，此时 PlatformIO 插件就会进行编译构建并准备烧录到单片机板子上，并提示我们需要接通单片机的电源开关：
+
+![CLion-cycle-power-done](./CLion-cycle-power-done.png)
+
+此时我们按下单片机电源开关，继续完成剩下的烧录过程：
+
+![CLion-flush-done](./CLion-flush-done.png)
+
+烧录完成后，可以看到单片机上的 LED 小灯一闪一闪的。到这里我们的集成开发环境就基本搭建完成了。
+
+### 4. CLion PlatformIO 插件配置说明
+
+1. 烧录的 USB 串口设备号
+
+可以看到在 CLion 中我们并没有指定对应的单片机的串口设备号就可以直接烧录到板子上了，这是因为 CLion PlatformIO 插件可以自动检测到对应的外设（假设只有一个外设的前提下），然后自动烧录到对应的外设上。
+
+![Auto-detected-upload-port](./Auto-detected-upload-port.png)
+
+我们也可以显示的配置需要烧录的对应串口设备号，在 `platformio.ini` 文件中声明 `upload_port` 即可：
+
+![Config-upload-port](./Config-upload-port.png)
+
+2. 编译烧录命令行的自动安装
+
+可以看到在 CLion PlatformIO 插件中我们并没有配置具体去编译和烧录的 `sdcc`, `stcgal` 等工具，但是我们创建的 `STC89C52RC` 这一个单片机芯片架构也是需要使用 `sdcc`, `stcgal` 这些工具具体去完成对应的编译和烧录功能的，PlatformIO 插件是怎么做到自动完成的呢？
+
+这是因为 CLion PlatformIO 插件中的 Tool Manager 帮我们自动检测所构建的 PCB 版类型所需要要的构建工具有哪些，并进行自动化安装。以下面这条构建命令为例：
+
+```bash
+/usr/local/bin/platformio -c clion run --target upload -e STC89C52RC
+```
+
+CLion PlatformIO 的 Tool Manager 会自动检测出需要安装的编译烧录工具，然后下载安装到 `~/.platformio/packages/` 目录下：
+
+```
+➜  LedDemo ll ~/.platformio/packages
+total 0
+drwx------  14 litong.deng  staff   448B 10  6 10:13 tool-scons
+drwx------  13 litong.deng  staff   416B 10  6 10:14 tool-stcgal
+drwx------   6 litong.deng  staff   192B 10  6 10:14 tool-vnproch55x
+drwx------   8 litong.deng  staff   256B 10  6 10:13 toolchain-sdcc
+```
+
+然后 CLion PlatformIO 插件就可以使用对应的工具包进行具体的编译、烧录等功能了。这里节省了手工操作，提高了开发效率！
+
+3. 解决在 IDE 中头文件提示找不到的问题
+
+上述过程虽然可以正常编译烧录到板子上进行验证，但是在 CLion 编辑器中居然提示找不到 <8051.h> 这个头文件或者引用了未定义的标识符：
+
+![Header-not-found](./Header-not-found.png)
+
+这是怎么回事呢？
+
+原因是在PlatformIO 插件进行编译的过程中会去自动的链接 Tool Manager 中管理到的依赖，但是 CLion PlatformIO 插件创建的项目是使用 CMakeLists.txt 进行管理依赖的，在 CMakeLists.txt 中未声明的依赖库是不会被 CLion 自动包含进来进行解析的，所以就导致了在运行 `platformio` 命令使用 `sdcc` 编译的时候能找到 `~/.platformio/packages/toolchain-sdcc` 下面的依赖库，但是 CLion 并不知道对应的头文件的位置从而提示报错解析不到对应的头文件。
+
+解决方案：
+
+确定了是 CMakeLists.txt 引入依赖库的路径解析问题后就简单了，我们只需要在 CMakeLists.txt 将对应的头文件目录引入进来即可：
+
+
+```txt
+include_directories("~/.platformio/packages/toolchain-sdcc/share/sdcc/include/mcs51")
+```
+
+可以看到，引入对应的目录后对应的头文件就能正常解析了，可以点进去查看头文件详情：
+
+![Include-directories](./Include-directories.png)
+
+3. 解决引入的头文件提示未定义的标识符问题
+
+接上图，在打开的 <8051.h> 头文件中看到定义的标识符标红了，在 C 源程序中看到的提示为 `User of undeclared identifier P0_0`：
+
+![Undefined-identifier](./Undefined-identifier.png)
+
+这是因为在 <8051.h> 头文件中使用了 <lint.h> 这个头文件却没有包含进来，我们在 <8051.h> 中引入 <lint.h> 即可：
+
+![Missing-include-lint](./Missing-include-lint.png)
+
+    猜测可能是 PlatformIO 插件在安装对应的 packages 的时候对于的包版本有 bug 或者没有更新（当然这不影响编译，可能在 PlatformIO 命令行编译的时候已经提前包含进来了所以这里没有再次包含？）
+
+最后，贴一张在 IDE 中能正常解析的图，这样看着就舒服多了：
+
+![Declared-header-identifier](./Declared-header-identifier.png)
+
+----
+
+至此，在 IDE 集成环境中搭建单片机开发环境就告一段落了，终于可以愉快的进行玩耍了！
