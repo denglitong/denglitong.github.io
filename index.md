@@ -57,6 +57,10 @@
 
 ## Index
 
+### 2022-10
+
+1. [用Wiki.js来优雅的管理文档](http://imbajin.com/2019-11-26-%E7%94%A8Wiki.js%E6%9D%A5%E4%BC%98%E9%9B%85%E7%9A%84%E7%AE%A1%E7%90%86%E6%96%87%E6%A1%A3/)
+
 ### 2022-04
 
 1. [vscode-icon-mac 目录图标插件](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-icons-mac)
