@@ -1,5 +1,7 @@
 # Welcome to homepage!
 
+> 提示：本站点不再更新，请移步 [denglitong.atlassian.net](https://denglitong.atlassian.net/wiki/home).
+
 ## Subjects
 
 ### English
