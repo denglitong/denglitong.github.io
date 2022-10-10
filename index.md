@@ -62,6 +62,10 @@
 ### 2022-10
 
 1. [用Wiki.js来优雅的管理文档](http://imbajin.com/2019-11-26-%E7%94%A8Wiki.js%E6%9D%A5%E4%BC%98%E9%9B%85%E7%9A%84%E7%AE%A1%E7%90%86%E6%96%87%E6%A1%A3/)
+2. [Git飞行规则(Flight Rules)](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
+3. [wireshark抓包新手使用教程 ](https://www.cnblogs.com/linyfeng/p/9496126.html)
+4. [我做系统架构的一些原则](https://coolshell.cn/articles/21672.html)
+5. [Colima - container runtimes on macOS](https://github.com/abiosoft/colima)
 
 ### 2022-04
 
