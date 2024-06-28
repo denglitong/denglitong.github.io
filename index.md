@@ -4,23 +4,23 @@
 
 ### English
 
-1. [1368个单词就够了](./1368-words/index.md)
+1. [Thinking in American English](./1368-words/index.md)
 2. [16 Practical Speaking Lessions](./16-lessions/index.md)
 3. [Bud, Not Buddy](./bud-not-buddy/index.md)
 
-### Embedded Software Development
+### Software Engineering
 
-1. [K51单片机](./embedded-k51/index.md)
-
-### Engineering
-
-1. [Clean Code 代码整洁之道](./clean-code/index.md)
-2. [Refactoring 重构：改善代码的既有设计](./refactoring/index.md)
-3. [Refactoring To Patterns 重构与模式](./refactoring-to-patterns/index.md)
+1. [Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code/index.md)
+2. [Refactoring: Improving the Design of Existing Code](./refactoring/index.md)
+3. [Refactoring To Patterns](./refactoring-to-patterns/index.md)
 
 ### Java Virtual Machine
 
-1. [Inside the Java Virtual Machine 深入理解Java虚拟机](./inside-the-java-virtual-machine/index.md)
+1. [Inside the JVM](./inside-the-java-virtual-machine/index.md)
+
+### Embedded Software Development
+
+1. [K51 Micro Control Unit](./embedded-k51/index.md)
 
 ## Categories
 
@@ -28,7 +28,7 @@
 
 1. [Resilience4j is a fault tolerance library](https://github.com/resilience4j/resilience4j)
 2. [Bind interceptor in Guice](https://stackoverflow.com/questions/2716993/hidden-features-of-google-guice/2718802)
-3. [Spring Validation最佳实践](https://segmentfault.com/a/1190000023471742)
+3. [Best practise of Spring Validation](https://segmentfault.com/a/1190000023471742)
 4. [AutoValue for POJO class](https://github.com/google/auto/blob/master/value/userguide/index.md)
 
 #### Unit tests
@@ -43,13 +43,13 @@
 
 ### Version Control
 
-1. [Git status 显示中文和解决中文乱码](https://blog.csdn.net/u012145252/article/details/81775362)
+1. [Git status not showing Chinese properly](https://blog.csdn.net/u012145252/article/details/81775362)
 
 ### Editors
 
-1. [Idea中自动注释的缩进（避免添加注释自动到行首）](https://blog.csdn.net/daizhe/article/details/78249272)
+1. [Idea comment indent](https://blog.csdn.net/daizhe/article/details/78249272)
 2. [解决IDEA中file文件插件失去高亮显示的问题](https://blog.csdn.net/weixin_45310564/article/details/106183955)
-3. [IDEA Version Control 窗口显示 local changes](https://blog.csdn.net/comeilmforever/article/details/107753783)
+3. [IDEA Version Control show local changes](https://blog.csdn.net/comeilmforever/article/details/107753783)
 
 ### Tools
 
