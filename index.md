@@ -1,6 +1,4 @@
-# Welcome to homepage!
-
-> 提示：本站点不再更新，请移步申请访问 [denglitong.atlassian.net](https://denglitong.atlassian.net/wiki/home).
+# Homepage
 
 ## Subjects
 
